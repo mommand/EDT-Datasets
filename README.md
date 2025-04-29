@@ -1,4 +1,4 @@
-# Edlerly Physio Datasets
+# Elderly Physio Datasets
 
 This repository contains five datasets related to physiological signals including **Heart Rate (HR)**, **Sleep Stages**, and **Oxygen Saturation (SpO₂)**. These datasets are intended for research and development purposes such as predictive modeling, digital twin systems, health monitoring, and sleep analysis.
 
