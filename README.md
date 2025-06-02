@@ -9,7 +9,7 @@ This repository contains five datasets related to physiological signals includin
 ### 1. Heart Rate Dataset
 - **Description**: Records the heart rate (beats per minute) at specific timestamps.
 - **Sample**:
-  | date       | time    | bpm |
+  | date       | time    | BPM |
   |------------|---------|-----|
   | 25/06/2024 | 10:10:15| 73  |
   | 25/06/2024 | 10:10:20| 71  |
@@ -17,14 +17,14 @@ This repository contains five datasets related to physiological signals includin
 - **Columns**:
   - `date`: Measurement date (DD/MM/YYYY)
   - `time`: Measurement time (HH:MM:SS)
-  - `bpm`: Heart rate in beats per minute
+  - `BPM`: Heart rate in beats per minute
 
 ---
 
 ### 2. Heart Rate and Sleep Dataset
 - **Description**: Combines heart rate measurements with corresponding sleep stages per minute.
 - **Sample**:
-  | dateTime         | bpm | level |
+  | dateTime         | bpm | Sleep Stage |
   |------------------|-----|-------|
   | 6/26/2024 1:52   | 75  | deep  |
   | 6/26/2024 1:53   | 71  | deep  |
@@ -32,8 +32,8 @@ This repository contains five datasets related to physiological signals includin
   | 6/26/2024 1:55   | 86  | deep  |
 - **Columns**:
   - `dateTime`: Timestamp (MM/DD/YYYY HH:MM)
-  - `bpm`: Heart rate in beats per minute
-  - `level`: Sleep stage (`deep`, `light`, `rem`, `wake`, etc.)
+  - `BPM`: Heart rate in beats per minute
+  - `Sleep Stage`: Sleep stage (`deep`, `light`, `rem`, `wake`, etc.)
 
 ---
 
@@ -44,15 +44,15 @@ This repository contains five datasets related to physiological signals includin
   [
     {
       "dateTime": "2024-10-08T03:02:00",
-      "level": "asleep"
+      "level": "deep"
     },
     {
       "dateTime": "2024-10-08T03:03:00",
-      "level": "asleep"
+      "level": "deep"
     },
     {
       "dateTime": "2024-10-08T03:04:00",
-      "level": "asleep"
+      "level": "deep"
     }
   ]
   ```
@@ -65,7 +65,7 @@ This repository contains five datasets related to physiological signals includin
 ### 4. SpO₂ Dataset
 - **Description**: Contains blood oxygen saturation (SpO₂) values measured over time.
 - **Sample**:
-  | dateTime         | spo2_value |
+  | dateTime         | SpO2 |
   |------------------|------------|
   | 6/25/2024 10:15  | 97.3       |
   | 6/25/2024 10:16  | 50         |
@@ -73,25 +73,25 @@ This repository contains five datasets related to physiological signals includin
   | 6/25/2024 10:18  | 50         |
 - **Columns**:
   - `dateTime`: Timestamp (MM/DD/YYYY HH:MM)
-  - `spo2_value`: Blood oxygen saturation percentage
+  - `SpO2`: Blood oxygen saturation percentage
 
 ---
 
 ### 5. SpO₂, Heart Rate, and Sleep Dataset
 - **Description**: Integrates heart rate, SpO₂, and sleep stage data recorded simultaneously per minute.
 - **Sample**:
-  | dateTime         | bpm | spo2_value | level    |
+  | dateTime         | BPM | SpO2 | Sleep Stage    |
   |------------------|-----|------------|----------|
-  | 6/26/2024 1:58   | 109 | 95.6       | restless |
+  | 6/26/2024 1:58   | 109 | 95.6       | deep |
   | 6/26/2024 1:59   | 101 | 95.9       | light    |
   | 6/26/2024 2:00   | 104 | 96.9       | light    |
   | 6/26/2024 2:01   | 103 | 96.2       | light    |
   | 6/26/2024 2:02   | 103 | 96.3       | light    |
 - **Columns**:
   - `dateTime`: Timestamp (MM/DD/YYYY HH:MM)
-  - `bpm`: Heart rate in beats per minute
-  - `spo2_value`: Blood oxygen saturation percentage
-  - `level`: Sleep stage (`light`, `deep`, `rem`, `restless`, etc.)
+  - `BPM`: Heart rate in beats per minute
+  - `SpO2`: Blood oxygen saturation percentage
+  - `Sleep Stage`: Sleep stage (`light`, `deep`, `rem`, `deep`, etc.)
 
 ---
 
